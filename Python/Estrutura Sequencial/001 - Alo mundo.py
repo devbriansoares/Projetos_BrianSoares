@@ -1,0 +1,3 @@
+print ("Alo mundo")
+
+input()
