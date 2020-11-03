@@ -1,10 +1,5 @@
-print ("| CONVERSÃO DE METROS EM CENTÍMETROS |")
-print ()
-Metro = float(input("Metros: "))
+#005 Faça um Programa que converta metros para centímetros.
+metro = float(input("Metros: "))
+cm = (metro*100)
 
-ConvMetro = (Metro*100)
-
-print ()
-print (Metro,"m é igual a",ConvMetro,"cm")
-
-input()
+print ("{}m é igual a {}cm".format(metro,cm))
