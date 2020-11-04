@@ -1,8 +1,8 @@
 import random
 print ("| JOGO DA ADIVINHAÇÃO |")
 print ("\nCHUTE UM NÚMERO ENTRE 1 E 100")
-print ("VOCÊ TEM 10 TENTATIVAS!")
-nome = input("Informe seu nome: ").capitalize()
+print ("|--VOCÊ TEM 10 TENTATIVAS!--|")
+nome = input("\nInforme seu nome: ").capitalize()
 num = random.randint(1,100)
 
 cont = 1
@@ -32,11 +32,11 @@ while True:
                 if palpite in listaChute:
                     print ("\nPalpite repetido!")
                 elif palpite < num:
-                    print ("\nChutou baixo. Tente novamente!")
+                    print ("Chutou baixo. Tente novamente!")
                     listaChute.append(palpite)
                     cont += 1
                 elif palpite > num:
-                    print ("\nChutou alto. Tente novamente!")
+                    print ("Chutou alto. Tente novamente!")
                     listaChute.append(palpite)
                     cont += 1
         
