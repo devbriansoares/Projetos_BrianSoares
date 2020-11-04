@@ -1,11 +1,8 @@
-print ("| ÁREA DO QUADRADO |")
-print ()
+#Faça um Programa que calcule a área de um quadrado,
+#em seguida mostre o dobro desta área para o usuário.
+
 l = float(input("Lado do quadrado: "))
 area = (l**2)
-dobroArea = area*2
 
-print ()
-print ("Área do quadrado =",area)
-print ("Dobro da área = ",dobroArea)
-
-input()
+print ("\nÁrea do quadrado = {}m²".format(area))
+print ("Dobro da área = {}".format(area*2))
