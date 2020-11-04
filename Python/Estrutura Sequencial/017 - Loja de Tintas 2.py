@@ -1,15 +1,11 @@
 print ("| LOJA DE TINTAS 2 |")
-print ()
 
 qtdLata = 18
 qtdGalao = 3.6
 precoLata = 80
 precoGalao = 25
 
-metros = float(input("Informe o tamanho da área a ser pintada (em m²): "))
-
-print ()
-print ()
+metros = float(input("\nInforme o tamanho da área a ser pintada (em m²): "))
 
 litros = float(metros / 6)
 if litros % qtdLata == 0:
@@ -23,14 +19,11 @@ else:
 valorTotalLata = (latasCompradas * precoLata)
 valorTotalGalao = (galoesComprados * precoGalao)
 
-print ()
-print ("Comprando apenas Latas de 18L: ",latasCompradas,"lata(s)")
-print ("Valor total: R$","%.2f" % valorTotalLata)
-print ()
-print ("Comprando apenas Galões de 3.6L: ",galoesComprados,"galão(ões)")
-print ("Valor total: R$","%.2f" % valorTotalGalao)
-print ()
-print ()
+print ("\nComprando apenas Latas de 18L: {} lata(s)".format(latasCompradas))
+print ("Valor total: R${:.2f}".format(valorTotalLata))
+
+print ("\nComprando apenas Galões de 3.6L: {} galão(ões)".format(galoesComprados))
+print ("Valor total: R${:.2f}".format(valorTotalGalao))
 
 #Arredondamento
 qtdArredondada = litros + (litros * 0.10)
@@ -52,13 +45,8 @@ else:
 
 NovoValorTotal = ((latasCompradas2 * precoLata) + (galoesComprados2 * precoGalao))
 
-
-print ("MELHOR FORMA DE ECONOMIZAR (Lata + Galão")
-print ("(QUANTIDADE SOLICITADA + 10%)")
-print ()
-print ("Latas 18L: ", latasCompradas2,"lata(s) +")
-print ("Galões 3.6L: ", galoesComprados2,"galão(ões)")
-print ("Valor Total: R$","%.2f" % NovoValorTotal)
-
-
-input()
+print ("\nMELHOR FORMA DE ECONOMIZAR (Lata + Galão)")
+print ("|----- QUANTIDADE SOLICITADA + 10% -----|")
+print ("\nLatas 18L: {} lata(s) +".format(latasCompradas2))
+print ("Galões 3.6L: {} galão(ões)".format(galoesComprados2))
+print ("Valor Total: R${:.2f}".format(NovoValorTotal))

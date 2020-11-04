@@ -1,16 +1,12 @@
-print ("| CÁLCULO COM NÚMEROS INTEIROS E REAIS |")
-print ()
+#Faça um Programa que peça 2 números inteiros e um número real.
+#Calcule e mostre:
+#A) O produto do dobro do primeiro com metade do segundo .
+#B) A soma do triplo do primeiro com o terceiro.
+#C) O terceiro elevado ao cubo.
 num1 = int(input("Informe um número inteiro: "))
 num2 = int(input("Informe um número inteiro: "))
 num3 = float(input("Informe um número real: "))
 
-a = ((num1*2)*(num2/2))
-b = ((num1*3)+(num3))
-c = (num3**3)
-
-print ()
-print ("Resultado A:","%.2f" % a)
-print ("Resultado B:","%.2f" % b)
-print ("Resultado C:","%.2f" % c)
-
-input()
+print ("\nResultado A: {:.2f}".format((num1*2)*(num2/2)))
+print ("Resultado B: {:.2f}".format((num1*3)+(num3)))
+print ("Resultado C: {:.2f}".format(num3**3))
