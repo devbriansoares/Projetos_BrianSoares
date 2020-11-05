@@ -12,9 +12,11 @@ if mensalidade > (salario * 0.3):
         "\nValor de Parcela: R${:.2f} "
         "\n30% DO SALÁRIO: R${:.2f} "
         "\nVALOR DE PARCELA MAIOR QUE 30% DO SALÁRIO!"
-        .format(mensalidade,(salario*0.3)))
+        .format(mensalidade,(salario*0.3))
+        )
 else:
     print (
         "\nEMPRÉSTIMO ACEITO! "
-        "R${} = {}x de R${:.2f}".format(valorCasa,(tempo*12),mensalidade)
+        "R${} = {}x de R${:.2f}"
+        .format(valorCasa,(tempo*12),mensalidade)
         )
