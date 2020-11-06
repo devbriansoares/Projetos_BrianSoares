@@ -1,6 +1,8 @@
+sexo = input("Sexo (M/F): ").upper()
 altura = float(input("Informe a altura em metros: "))
-pesoH = ((72.7*altura) - 58)
-pesoM = ((62.1*altura) - 44.7)
-
-print ("Peso ideal p/ um homem desta altura é de: {:.2f}kg".format(pesoH))
-print ("Peso ideal p/ uma mulher desta altura é de: {:.2f}kg".format(pesoM))
+if sexo == "M":
+    pesoM = ((72.7*altura) - 58)
+    print ("Seu peso ideal é de: {:.2f}kg".format(pesoM))
+elif sexo == "F":
+    pesoF = ((62.1*altura) - 44.7)
+    print ("Seu peso ideal é de: {:.2f}kg".format(pesoF))
