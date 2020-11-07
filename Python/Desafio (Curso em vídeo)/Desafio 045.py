@@ -1,6 +1,5 @@
 import random
 print ("| JOKENPÔ |")
-
 pcMao = ["pedra","papel","tesoura"]
 pcJogada = ""
 pcScore = 0
