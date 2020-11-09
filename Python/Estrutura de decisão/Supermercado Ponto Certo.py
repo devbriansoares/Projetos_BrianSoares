@@ -1,3 +1,5 @@
+from datetime import datetime
+now = datetime.now()
 print ("| SEXTA DA CARNE |")
 
 print ('''
@@ -31,22 +33,23 @@ formaPag = input("Forma de Pagamento - Cartão (C) / Dinheiro (D): ").upper()
 if formaPag == "C":
     valorTotal = valorTotal - (valorTotal*0.05)
     print ('''
-            SUPERMERCADO PONTO CERTO
-Rua Barão de Moreno, 119. Vila Rica - Jaboatão dos Guararapes/PE
+            SUPERMERCADO GRANDIOSO
+Av. dos Vencedores, 001. Vila Rica - Jaboatão dos Guararapes/PE
 ----------------------------------------------------------------
-09/11/20 11:02:35                               CONTROLE: 000001
+{}/{}/{} {}:{}:{}                               CONTROLE: 000001
 ----------------------------------------------------------------
 ID    CÓDIGO    DESCRIÇÃO       QTDE    UN          V. TOTAL
 001    0000     {}         {:.2f}    Kg          R${:.2f}
 ----------------------------------------------------------------
-DESCONTO  R$                                          R${:.2f}
-VALOR TOTAL R$                                        R${:.2f}
+DESCONTO                                              R${:.2f}
+VALOR TOTAL                                           R${:.2f}
 FORMA DE PAGAMENTO: CARTÃO
-'''.format(tipoCarne,qtdCarne,valorTotal,valorTotal*0.05,valorTotal))
+'''.format(now.day,now.month,now.year,now.hour,now.minute,
+now.second,tipoCarne,qtdCarne,valorTotal,valorTotal*0.05,valorTotal))
 elif formaPag == "D":
     print ('''
-            SUPERMERCADO PONTO CERTO
-Rua Barão de Moreno, 119. Vila Rica - Jaboatão dos Guararapes/PE
+            SUPERMERCADO GRANDIOSO
+Av. dos Vencedores, 001. Vila Rica - Jaboatão dos Guararapes/PE
 ----------------------------------------------------------------
 09/11/20 11:02:35                               CONTROLE: 000001
 ----------------------------------------------------------------
