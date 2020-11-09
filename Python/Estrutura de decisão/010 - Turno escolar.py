@@ -1,10 +1,6 @@
 print ("| TURNO ESCOLAR |")
-print ()
-
 print ("(M) MATUTINO / (V) VESPERTINO / (N) NOTURNO ")
-turno = input("Turno escolar (M/V/N): ")
-turno = turno.upper()
-print ()
+turno = input("Turno escolar (M/V/N): ").upper()
 
 if turno == "M":
     print ("Bom dia!")
@@ -13,8 +9,4 @@ elif turno == "V":
 elif turno == "N":
     print ("Boa noite!")
 else:
-    print ("Valor inválido.")  
-
-    
-
-input()
+    print ("Valor inválido.")
