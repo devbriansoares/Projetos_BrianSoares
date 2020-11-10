@@ -3,8 +3,7 @@ print ("| SIMULADOR DE DADOS |")
 
 while True:
     dado = 0
-    jogarDado = input("\nDeseja lançar o dado s/n: ")
-    jogarDado = jogarDado.lower()
+    jogarDado = input("\nDeseja lançar o dado s/n: ").lower()
     if jogarDado == "s":
         dado = random.randint(1,6)
         print (dado)
