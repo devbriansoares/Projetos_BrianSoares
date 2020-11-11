@@ -1,7 +1,5 @@
 import random
 print ("| CHUTE UM NÚMERO ENTRE 1 E 100 |")
-print ()
-print ()
 
 nome = input("Seu nome: ").capitalize()
 
