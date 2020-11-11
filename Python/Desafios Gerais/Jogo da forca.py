@@ -1,5 +1,8 @@
 print ("| JOGO DA FORCA SEM FORCA |")
 
-palavraSecreta = "departamento"
+secret = []
+palavraSecreta = ("departamento")
+for letra in palavraSecreta():
+    secret.append(letra)
 
-
+print (secret)
